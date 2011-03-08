@@ -12,8 +12,21 @@
     <scm>
         <connection>scm:git:ssh://github.com/quynguyen/${artificatId}.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/quynguyen/${artifactId}.git</developerConnection>
-		<url>https://github.com/quynguyen/${artifactId}</url>
+        <url>https://github.com/quynguyen/${artifactId}</url>
     </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>repo</id>
+            <uniqueVersion>false</uniqueVersion>
+            <url>svn:https://whileloop-m2-repo.googlecode.com/svn/trunk/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot-repo</id>
+            <uniqueVersion>false</uniqueVersion>
+            <url>svn:https://whileloop-m2-repo.googlecode.com/svn/trunk/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <properties>
         <maven.compiler.source>1.5</maven.compiler.source>
@@ -23,6 +36,12 @@
     </properties>
 
     <repositories>
+        <repository>
+            <id>maven2-repository.dev.java.net</id>
+            <name>Java.net Repository for Maven</name>
+            <url>http://download.java.net/maven/2/</url>
+        </repository>
+
         <repository>
             <id>scala-tools.org</id>
             <name>Scala-Tools Maven2 Repository</name>
@@ -66,6 +85,14 @@
     </dependencies>
 
     <build>
+        <extensions>
+            <extension>
+                <groupId>org.jvnet.wagon-svn</groupId>
+                <artifactId>wagon-svn</artifactId>
+                <version>1.8</version>
+            </extension>
+        </extensions>
+
         <pluginManagement>
             <plugins>
                 <plugin>
