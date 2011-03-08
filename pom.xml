@@ -10,9 +10,9 @@
     <inceptionYear>2009</inceptionYear>
 
     <scm>
-        <connection>scm:git:git://github.com/quynguyen/scala-pom.git</connection>
-        <url>scm:git:git://github.com/quynguyen/scala-pom.git</url>
-        <developerConnection>scm:git:git@github.com:quynguyen/scala-pom.git</developerConnection>
+        <connection>scm:git:ssh://github.com/quynguyen/${artificatId}.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/quynguyen/${artifactId}.git</developerConnection>
+		<url>https://github.com/quynguyen/${artifactId}</url>
     </scm>
 
     <properties>
