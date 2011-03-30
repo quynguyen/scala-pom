@@ -6,7 +6,7 @@
     <version>2.8.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
-    <description>A pom for scala projects</description>
+    <description>A pom for scala projects.</description>
     <parent>
         <groupId>ca.whileloop</groupId>
         <artifactId>scm-pom</artifactId>
