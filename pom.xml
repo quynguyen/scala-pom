@@ -13,8 +13,8 @@
         <version>1.0.1</version>
     </parent>
     <scm>
-        <connection>scm:git:ssh://github.com/quynguyen/${artifactId}.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/quynguyen/${artifactId}.git</developerConnection>
+        <connection>scm:git:ssh://github.com/quynguyen/${project.artifactId}.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/quynguyen/${project.artifactId}.git</developerConnection>
     </scm>
     <properties>
         <maven.compiler.source>1.5</maven.compiler.source>
